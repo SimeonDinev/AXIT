@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+.sub-list-section {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 130px;
+  padding: 105px 140px;
+}
+.sub-list-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.sub-list-content-container > h2 {
+  font-size: 20px;
+  line-height: 43px;
+  color: #212121;
+  font-weight: 700;
+}
+.sub-list-content-container > h2 > img {
+  padding-top: 10px;
+  display: block;
+}
+.sub-list-content-container > p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #86878b;
+  font-weight: 400;
+  width: 90%;
+  padding-bottom: 15px;
+}
+.about-download {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.about-download div h3 {
+  font-size: 14px;
+  line-height: 17px;
+  color: #212121;
+  font-weight: 700;
+  font-family: "Open Sans";
+}
+.about-download div p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #86878b;
+  font-weight: 400;
+  max-width: 366px;
+}
+.about-download i {
+  background-image: url(../images/circle.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 10px 8px 13px 10px;
+
+  font-size: 16px;
+  color: #ff8b38;
+  align-self: flex-start;
+
+  cursor: pointer;
+}
+.about-download i:hover {
+  color: rgb(139, 119, 3);
+  transition: 0.15s;
+}
+/* standart picture section */
+.standart-picture-section {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 130px;
+  padding: 105px 140px;
+}
+.standart-picture-section > div {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.standart-picture-section > div > h2 img {
+  padding-top: 10px;
+  display: block;
+}
+.standart-picture-section > div h2 {
+  padding-top: 12px;
+  font-size: 20px;
+  line-height: 43px;
+  color: #212121;
+  font-weight: 700;
+}
+.standart-picture-section > div > p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #86878b;
+  font-weight: 400;
+  max-width: 476px;
+}
+/* why this is awesom section */
+.why-section {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 140px;
+  background-color: #ffffff;
+  gap: 80px;
+}
+.why-section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 25px;
+}
+.why-section-header h1 {
+  font-size: 36px;
+  line-height: 43px;
+  color: #212121;
+  font-weight: 400;
+  font-family: "Raleway";
+  text-align: center;
+}
+.img-div-why {
+  display: flex;
+  flex-direction: column;
+}
+.why-section-header p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #86878b;
+  font-weight: 400;
+  max-width: 476px;
+}
+.why-section-containers {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+.why-section-containers > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.why-section-containers-logo > i {
+  color: #ff8b38;
+  background-image: url(../images/big-circle.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  padding-top: 36px;
+  text-align: center;
+}
+.why-section-containers > div > h3 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+  font-weight: 700;
+  font-family: "Open Sans";
+}
+.why-section-containers > div > p {
+  padding-top: 26px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #86878b;
+  font-weight: 400;
+  text-align: center;
+}
+@media screen and (max-width: 1290px) {
+  .sub-list-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sub-list-section > img {
+    max-height: 500px;
+    max-width: 500px;
+    align-self: center;
+  }
+  .sub-list-content-container {
+    align-items: center;
+    text-align: center;
+  }
+  .about-download {
+    justify-content: flex-start;
+  }
+  .sub-list-content-container > h2 > img {
+    margin: 0 auto;
+  }
+  .sub-list-content-container > p {
+    width: 50%;
+  }
+  .standart-picture-section {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .standart-picture-section > img {
+    max-height: 500px;
+    max-width: 500px;
+    align-self: center;
+  }
+  .standart-picture-section > div > h2 img {
+    margin: 0 auto;
+  }
+  .about-download > i {
+    align-self: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  .why-section-containers {
+    text-align: center;
+    flex-direction: column;
+  }
+  .sub-list-section {
+    flex-direction: column-reverse;
+    padding: 30px 50px;
+  }
+  .why-section-header p {
+    text-align: center;
+  }
+  .standart-picture-section > img {
+    height: 230px;
+    width: 370px;
+  }
+  .sub-list-section > img {
+    height: 230px;
+    width: 370px;
+  }
+}
